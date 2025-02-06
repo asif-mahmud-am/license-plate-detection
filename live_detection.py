@@ -4,8 +4,8 @@ import urllib.request
 import os
 from ultralytics import YOLO
 
-coco_model = YOLO("yolov8n.pt")
-model = YOLO('license_plate_detector.pt')
+coco_model = YOLO("./models/yolov8n.pt")
+model = YOLO('./models/license_plate_detector.pt')
 
 video_path = "Cars, Busy Streets, City Traffic - No Copyright Royalty Free Stock Videos.mp4"
 
