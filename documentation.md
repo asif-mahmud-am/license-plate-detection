@@ -54,7 +54,15 @@ mAP@0.5: 0.9781
 mAP@0.5:0.95: 0.6835
 ```
 
-More metrics can be found in ```.\run\detect\val2```
+More metrics can be found in ```.\runs\detect\val2```
+
+## Optimization 
+
+1. Converted the model to onnx format reducing space and inference time. Conversion code can be found in ```convert_to_onnx.ipynb```
+
+2. Compared the performance of full precision model and onnx model in terms of inference time, memory, and efficiency. Follow notebook: ```full_precision_vs_onnx.ipynb```
+
+Seems like onnx is lighter, faster but not as efficient. Compare the outputs from the full precision model and onnx model. ('output_yolo.jpg' vs 'output_onnx.jpg')
 
 ## GUI 
 
